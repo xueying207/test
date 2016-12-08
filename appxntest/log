@@ -1,0 +1,7 @@
+y=sqldate.sqltest()
+#y.sqlclose()
+x=y.sqlrun("select * from [WP_Product].[dbo].ExCard where ExNumber='121287099435'")
+print x.fetchone()
+
+x=y.sqlrun("select * from [WP_Product].[dbo].ExCard where ExNumber='121287099435'")
+print x.next()
